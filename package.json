@@ -1,8 +1,7 @@
 {
-  "name": "im-class-transformer",
-  "version": "0.5.0",
+  "name": "@telescope/class-transformer",
+  "version": "1.0.0",
   "description": "Proper decorator-based transformation / serialization / deserialization of plain javascript objects to class constructors",
-  "license": "MIT",
   "readmeFilename": "README.md",
   "private": true,
   "authors": [
@@ -15,6 +14,9 @@
       "email": "igor.fsp.milla@gmail.com"
     }
   ],
+  "publishConfig": {
+    "registry": "https://nexus.service.telescope.tv/repository/npm-internal/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/igormilla/class-transformer.git"
@@ -63,6 +65,7 @@
     "typescript": "^2.0.10"
   },
   "scripts": {
-    "test": "gulp tests"
+    "test": "gulp tests",
+    "prod": "gulp publish"
   }
 }
